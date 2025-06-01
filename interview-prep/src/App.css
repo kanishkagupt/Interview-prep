@@ -1,0 +1,141 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f4f8;
+}
+
+/* Navbar Styles */
+.navbar {
+  background: linear-gradient(to right, #4a90e2, #007aff);
+  padding: 12px 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 16px;
+}
+
+.nav-section {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  white-space: nowrap;
+  gap: 6px;
+  max-width: calc(100% - 140px); /* Reserve space for auth buttons */
+}
+
+.nav-section a {
+  text-decoration: none;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.15);
+  transition: all 0.3s ease;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.nav-section a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  transform: scale(1.05);
+}
+
+/* Auth Buttons */
+.auth-section {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-shrink: 0;
+  width: 130px; /* Fixed width to avoid overlap */
+  justify-content: flex-end;
+}
+
+.btn {
+  padding: 4px 8px;
+  font-size: 12px;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary {
+  background-color: #ffffff;
+  color: #007aff;
+}
+
+.btn-primary:hover {
+  background-color: #e6f0ff;
+  transform: scale(1.05);
+}
+
+.btn-danger {
+  background-color: #ff4d4f;
+  color: white;
+}
+
+.btn-danger:hover {
+  background-color: #ff7875;
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .nav-section {
+    gap: 4px;
+    max-width: calc(100% - 130px);
+  }
+
+  .nav-section a { 
+    font-size: 11px;
+    padding: 3px 6px;
+  }
+
+  .auth-section {
+    width: 120px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-inner {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .nav-section {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    max-width: 100%;
+  }
+
+  .auth-section {
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: 8px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+

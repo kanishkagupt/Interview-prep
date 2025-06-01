@@ -1,0 +1,61 @@
+.analytics-container {
+  text-align: center;
+  padding: 20px;
+  background-color: #f5f5f5;
+  min-height: 100vh;
+}
+.analytics-container h1 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 10px;
+}
+.analytics-container p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 20px;
+}
+.input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+select {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 250px;
+}
+.generate-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.generate-button:hover {
+  background-color: #0056b3;
+}
+.report-box {
+  margin-top: 30px;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: auto;
+}
+.report-box h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.report-box p {
+  font-size: 18px;
+  color: #555;
+}
+
